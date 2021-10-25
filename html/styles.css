@@ -156,9 +156,11 @@ h4{
 .offcanvas-body{
   background-color: black;
 }
-.nav-link :hover{
-  color: #0073e6;
+.a{
+color: red;
 }
+  
+
 .navbar{
   margin-left: 30px;
   margin-right: 30px;
