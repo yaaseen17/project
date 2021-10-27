@@ -57,19 +57,42 @@
 h6 {
   margin-top: 10px;
 }
-.d-block {
-  border-radius: 50%;
-}
 .fff {
+    border-radius: 50%;
+    align-items: center;
+  }
+/* .d-block {
   border-radius: 50%;
 }
-.jjj {
+
+fff {
+  border-radius: 50%;
+}
+
+/* .jjj {
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 300px;
 }
-.carousel-inner{
-    height: fit-content;
+.carousel-inner {
+  height: 600px;
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
 }
+.carousel-indicators {
+  margin-top: 10px;
+}
+.carousel-control-prev {
+  margin-top: 25%;
+}
+.carousel-control-next {
+  margin-top: 25%;
+}
+@media screen and (max-height: 1000px) {
+  .carousel-item {
+    height: 24rem;
+  }
+} */ 
