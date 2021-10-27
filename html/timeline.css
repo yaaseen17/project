@@ -125,7 +125,6 @@
 .containers.right .content {
   padding: 30px 30px 30px 90px;
   border-radius: 500px 0 0 500px;
-  
 }
 
 .containers .content h2 {
@@ -146,7 +145,7 @@
 
 @media (max-width: 767.98px) {
   .timeline::after {
-    left: 90px;
+    left: 0px;
   }
 
   .containers {
@@ -187,16 +186,29 @@
     border-radius: 500px 0 0 500px;
   }
 }
-.the{
-    border-radius: 50%;
-    float: right;
+.the {
+  border-radius: 50%;
+  float: right;
 }
-.content{
-    height: 200px;
+.content {
+  height: 200px;
+  width: fit-content;
 }
-.and{
-    border-radius: 50%;
+.and {
+  border-radius: 50%;
 }
-.carousel{
-    align-items: center;
+.carousel {
+  align-items: center;
+}
+@media screen and (max-width: 400px) {
+  .and {
+    display: none;
+  }
+  .the {
+    display: none;
+  }
+  .body{
+      margin-left: 0%;
+      margin-right: 0%;
+  }
 }
