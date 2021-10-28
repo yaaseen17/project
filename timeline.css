@@ -149,14 +149,15 @@
   }
 
   .containers {
-    width: fit-content;
+    width: 400px;
     padding-left: 20px;
     padding-right: 30px;
+    height: max-content;
   }
-  .the{
+  .the {
     display: none;
   }
-  .and{
+  .and {
     display: none;
   }
 
@@ -213,8 +214,8 @@
   .the {
     display: none;
   }
-  .body{
-      margin-left: 0%;
-      margin-right: 0%;
+  .body {
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
