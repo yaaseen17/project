@@ -584,11 +584,22 @@ h6 {
   }
   #email{
       background-color: transparent;
+      color: #bbb;
+      border-color: gray;
   }
   #name{
       background-color: transparent;
+      color: #bbb;
+      border-color: gray;
   }
+  
 
   #suma{
       background-color: transparent;
+      color: #bbb;
+      border-color: gray;
+  }
+  
+  h6{
+   margin-top: 10px;
   }
