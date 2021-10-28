@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   max-width: 1140px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 15px 0;
 }
 
@@ -149,9 +149,15 @@
   }
 
   .containers {
-    width: 100%;
+    width: fit-content;
     padding-left: 20px;
     padding-right: 30px;
+  }
+  .the{
+    display: none;
+  }
+  .and{
+    display: none;
   }
 
   .containers.right {
