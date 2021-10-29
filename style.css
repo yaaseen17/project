@@ -461,12 +461,14 @@ textarea {
   color: #fff;
 }
 
-.social-media-list li {
+.li {
   position: relative;
   display: inline-block;
   height: 60px;
   width: 60px;
-  margin: 10px 3px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   line-height: 60px;
   border-radius: 50%;
   color: #fff;
@@ -489,11 +491,11 @@ textarea {
   transition: all 0.2s ease-in-out;
 }
 
-.social-media-list li:hover {
+.li:hover {
   background-color: #fff;
 }
 
-.social-media-list li:hover:after {
+.li:hover:after {
   opacity: 1;
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
@@ -565,7 +567,7 @@ hr {
   .social-media-list {
     left: 0;
   }
-  .social-media-list li {
+  .li {
     height: 55px;
     width: 55px;
     line-height: 55px;
