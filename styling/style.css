@@ -909,3 +909,12 @@ h2 {
   height: 150px;
   border-radius: 50%;
 }
+.table.experience td {
+  padding: 20px;
+}
+
+td.year {
+  font-size: 12px;
+}
+
+
