@@ -17,111 +17,12 @@
 <title>Yaaseen Portfolio</title>
 <style>
   body {
-  background-color: #000;
+  background-image: url(./images/background.jpg);
   padding-bottom: 100px;
   margin-left: 40px;
   margin-right: 40px;
 }
-.sky,
-.road {
-  position: relative;
-}
 
-.sky {
-  margin-top: 80px;
-  height: 200px;
-  background: rgb(5, 5, 5);
-}
-
-.grass {
-  height: 100px;
-  background: rgb(0, 0, 0);
-}
-
-.road {
-  height: 200px;
-  background: rgb(0, 0, 0);
-  box-sizing: border-box;
-  border-top: 10px solid rgb(0, 0, 0);
-  border-bottom: 10px solid rgb(0, 0, 0);
-  width: 100%;
-}
-
-.lines {
-  box-sizing: border-box;
-
-  height: 0px;
-  width: 100%;
-  position: absolute;
-  top: 45%;
-  box-shadow: 20px 10px 5px 2px #1041ff;
-}
-
-.mario {
-  position: absolute;
-  top: -40px;
-  left: 0px;
-  animation: drive 3s both infinite normal, jump 0.3s 1.2s ease;
-  height: 50px;
-}
-
-.luigi {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  animation: drive 5s both infinite normal;
-  height: 50px;
-}
-
-.cloud {
-  position: absolute;
-}
-
-.cloud:nth-child(1) {
-  width: 100px;
-  top: 120px;
-  opacity: 0.5;
-  animation: wind 80s /* delay somewhere after duration */ linear infinite
-    reverse;
-}
-
-.cloud:nth-child(2) {
-  width: 100px;
-  top: 10;
-  animation: wind 50s linear infinite reverse;
-}
-
-/* KEYFRAMES */
-
-@keyframes drive {
-  from {
-    transform: translateX(-200px);
-  }
-  to {
-    transform: translateX(500px);
-  }
-}
-
-@keyframes wind {
-  from {
-    left: -300px;
-  }
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes jump {
-  0% {
-    top: -40px;
-  }
-  50% {
-    top: -100px;
-  }
-  100% {
-    top: -40px;
-  }
-}
 h1 {
   font-family: "Orbitron", sans-serif;
   font-size: 50px;
@@ -383,15 +284,10 @@ p {
           <section id="Home">
 
             <div>
-              <h1  >Yaaseen Davids</h1>
-                <h2>Aspiring full stack developer</h2><br>
+              <h1>Yaaseen Davids</h1>
+               <br>
               
-               <div class="grass"></div>
-               <div class="road">
-                <div class="lines"></div>
-                <img src="../images/mario.png" alt="Mario on a go-kart" class="mario">
-                <img src="../images/luigi.png" alt="Luigi on a go-kart" class="luigi">
-               </div>
+              
           </section>
           <br><br><br><br><br><br><br><br><br>
           <h2 style="font-size: 50px;">About me</h2>
