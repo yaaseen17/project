@@ -12,89 +12,93 @@
   box-shadow: 0px 0px 20px 10px #0073e6;
 }
 .buttonDownload {
-	display: inline-block;
-	position: relative;
-	padding: 10px 15px;
-  
-	background-color: #000000;
-	color: #0073e6;
-  
-	font-family: sans-serif;
-	text-decoration: none;
-	font-size: 0.9em;
-	text-align: center;
-	text-indent: 15px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 15px;
+border-color: transparent;
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px 2px #0073e6;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 15px;
+  margin: 30px;
+  border-radius: 5%;
 }
 
 .buttonDownload:hover {
-	background-color: #333;
-	color: white;
+  
+  color: #0073e6;
+  box-shadow: 0px 0px 10px 5px #0073e6
 }
 
-.buttonDownload:before, .buttonDownload:after {
-	content: ' ';
-	display: block;
-	position: absolute;
-	left: 15px;
-	top: 52%;
+.buttonDownload:before,
+.buttonDownload:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
 }
 
 /* Download box shape  */
 .buttonDownload:before {
-	width: 10px;
-	height: 2px;
-	border-style: solid;
-	border-width: 0 2px 2px;
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
 }
 
 /* Download arrow shape */
 .buttonDownload:after {
-	width: 0;
-	height: 0;
-	margin-left: 3px;
-	margin-top: -7px;
-  
-	border-style: solid;
-	border-width: 4px 4px 0 4px;
-	border-color: transparent;
-	border-top-color: inherit;
-	
-	animation: downloadArrow 2s linear infinite;
-	animation-play-state: paused;
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+
+  animation: downloadArrow 2s linear infinite;
+  animation-play-state: paused;
 }
 
 .buttonDownload:hover:before {
-	border-color: #0073e6;
+  border-color: #0073e6;
 }
 
 .buttonDownload:hover:after {
-	border-top-color: #0073e6;
-	animation-play-state: running;
+  border-top-color: #0073e6;
+  animation-play-state: running;
 }
 
 /* keyframes for the download icon anim */
 @keyframes downloadArrow {
-	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
-	0% {
-		margin-top: -7px;
-		opacity: 1;
-	}
-	
-	0.001% {
-		margin-top: -15px;
-		opacity: 0;
-	}
-	
-	50% {
-		opacity: 1;
-	}
-	
-	100% {
-		margin-top: 0;
-		opacity: 0;
-	}
+  /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
 }
-.pers{
+.pers {
   background-color: #0073e6;
   display: flex;
   justify-content: center;
@@ -106,9 +110,9 @@
   box-shadow: 0px 0px 20px 10px #0073e6;
   border-left: transparent;
 }
-.skills{
-  width: 500px;
- margin-top: 0%;
+.skills {
+  width: 400px;
+  margin-top: 0%;
 }
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 
@@ -129,7 +133,7 @@
 }
 .image img {
   height: 50vh;
-  margin:  50px auto;
+  margin: 50px auto;
   width: fit-content;
 }
 .contents {
@@ -138,32 +142,28 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-radius: 0 12px 12px 0;
+  border-radius: 5%;
   color: #fff;
-  margin-top: 0%;
+  height: fit-content;
   box-shadow: 0px 0px 20px 10px #0073e6;
   border-left: transparent;
+  width: fit-content;
 }
 .contents h2 {
   text-transform: uppercase;
   font-size: 26px;
   letter-spacing: 6px;
   opacity: 0.9;
-  margin-top: 0%;
+  margin: 20px;
 }
-.contents span {
-  height: 0.5px;
-  width: 80px;
-  background: #777;
-  margin: 30px 0;
-}
+
 .contents p {
   padding-bottom: 15px;
   font-weight: 10px;
 
   width: 60%;
   text-align: center;
-  margin: 0 ;
+  margin: 10px;
   line-height: 1.7;
   color: #ffffff;
 }
@@ -439,7 +439,7 @@ textarea {
   line-height: 60px;
   border-radius: 50%;
   opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px rgb(255, 255, 255);
   transition: all 0.2s ease-in-out;
 }
 
@@ -459,7 +459,7 @@ textarea {
 
 .copyright {
   font: 200 14px "Oswald", sans-serif;
-  color: #555;
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   text-align: center;
 }
@@ -574,7 +574,7 @@ hr {
 textarea {
   max-width: 400px;
   background-color: #000;
-  color: #fff;
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
 }
 
@@ -679,37 +679,13 @@ textarea {
   transition: all 0.2s ease-in-out;
 }
 
-.social-media-list li:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all 0.2s ease-in-out;
-}
-
-.li:hover {
-  background-color: #fff;
-}
-
-.li:hover:after {
-  opacity: 1;
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-}
-
 .social-media-list li:hover a {
   color: #000;
 }
 
 .copyright {
   font: 200 14px "Oswald", sans-serif;
-  color: #555;
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   text-align: center;
 }
@@ -813,10 +789,8 @@ h6 {
   position: relative;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 40%;
   background-color: transparent;
-  margin-top: 50px;
-  
 }
 .container {
   width: 100%;
@@ -825,6 +799,7 @@ h6 {
   border-radius: 10px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
   background-color: transparent;
+  width: 400px;
 }
 
 .container * {
@@ -838,6 +813,7 @@ h2 {
   text-align: center;
   font-size: 33px;
   font-weight: bold;
+  margin: auto;
 }
 
 .details {
@@ -864,7 +840,7 @@ h2 {
   margin-bottom: 30px;
 }
 #html-bar {
-  animation: html-fill 2s forwards;
+  animation: html-fill 3s forwards;
 }
 @keyframes html-fill {
   100% {
@@ -872,7 +848,7 @@ h2 {
   }
 }
 #css-bar {
-  animation: css-fill 2s forwards;
+  animation: css-fill 3s forwards;
 }
 @keyframes css-fill {
   100% {
@@ -880,7 +856,7 @@ h2 {
   }
 }
 #javascript-bar {
-  animation: js-fill 2s forwards;
+  animation: js-fill 3s forwards;
 }
 @keyframes js-fill {
   100% {
@@ -888,7 +864,7 @@ h2 {
   }
 }
 #jQuery-bar {
-  animation: jQuery-fill 2s forwards;
+  animation: jQuery-fill 3s forwards;
 }
 @keyframes jQuery-fill {
   100% {
@@ -896,7 +872,7 @@ h2 {
   }
 }
 .percent {
-  color: aliceblue;
+  color: #fff;
   position: relative;
 }
 .yisis {
@@ -904,7 +880,7 @@ h2 {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
     0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
-.in{
+.in {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -917,20 +893,81 @@ td.year {
   font-size: 12px;
 }
 
-h1{
-  font-size:3rem;
-  margin-top:45vh;
-  color:white;
-  font-family: 'Merienda', cursive;
-  animation-name:glow;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
+h1 {
+  font-size: 3rem;
+  margin-top: 45vh;
+  color: white;
+  font-family: "Merienda", cursive;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-@keyframes glow{
-  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #0073e6;}
-  to{text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
-    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6}
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 5px #fff, 0px 0px 5px #0073e6;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+      0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
 }
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  text-align: center;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
 
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  text-transform: uppercase;
+  animation: waviy 3s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+.abs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.icon {
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 50px;
+}
+.icon-1{
+  margin: 50px;
+  border-radius: 50%;
+  background-color: #0073e6;
+  
+}
+.icon-2{
+  margin: 50px;
+  border-radius: 5%;
+  background-color: #0073e6;
+  
+}
+.icon-1:hover{
+  box-shadow: 0px 0px 10px 5px #0073e6;
+}
+.icon-2:hover{
+  box-shadow: 0px 0px 10px 5px #0073e6;
+}
