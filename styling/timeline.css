@@ -349,7 +349,7 @@
   text-align: center;
   border-radius: 5%;
   width: fit-content;
-  height: fit-content;
+  height: 300px;
   margin: 20px;
 }
 
@@ -506,4 +506,78 @@
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
     0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
   color: #ffffff;
+  
+}
+@import url("https://fonts.googleapis.com/css?family=Text+Me+One");
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neon-wrapper {
+  border: solid 2px #ffd8d8;
+  border-radius: 1.5rem;
+  -webkit-animation: border-glow 5s linear forwards;
+          animation: border-glow 5s linear forwards;
+          
+}
+
+
+
+@-webkit-keyframes border-glow {
+  0% {
+    box-shadow: none;
+  }
+  30% {
+    box-shadow: none;
+  }
+  35% {
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #0073e6, 0 0 4vw 0.4vw #0073e6, inset 0 0 1.5vw 0.4vw #0073e6, inset 0 0 0.4vw 0.2vw #0073e6, inset 0 0 0.5vw 0.2vw #fff7f7;
+  }
+  37% {
+    box-shadow: none;
+  }
+  45% {
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #0073e6, 0 0 4vw 0.4vw #0073e6, inset 0 0 1.5vw 0.4vw #0073e6, inset 0 0 0.4vw 0.2vw #0073e6, inset 0 0 0.5vw 0.2vw #fff7f7;
+  }
+  47% {
+    box-shadow: none;
+  }
+  49% {
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #0073e6, 0 0 4vw 0.4vw #0073e6, inset 0 0 1.5vw 0.4vw #0073e6, inset 0 0 0.4vw 0.2vw #0073e6, inset 0 0 0.5vw 0.2vw #fff7f7;
+  }
+  100% {
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #0073e6, 0 0 4vw 0.4vw #0073e6, inset 0 0 1.5vw 0.4vw #0073e6, inset 0 0 0.4vw 0.2vw #0073e6, inset 0 0 0.5vw 0.2vw #fff7f7;
+  }
+}
+@keyframes border-glow {
+  0% {
+    box-shadow: none;
+  }
+  30% {
+    box-shadow: none;
+  }
+  35% {
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #0073e6, 0 0 4vw 0.4vw #0073e6, inset 0 0 1.5vw 0.4vw #0073e6, inset 0 0 0.4vw 0.2vw #0073e6, inset 0 0 0.5vw 0.2vw #fff7f7;
+  }
+  37% {
+    box-shadow: none;
+  }
+  45% {
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #0073e6, 0 0 4vw 0.4vw #0073e6, inset 0 0 1.5vw 0.4vw #0073e6, inset 0 0 0.4vw 0.2vw #0073e6, inset 0 0 0.5vw 0.2vw #fff7f7;
+  }
+  47% {
+    box-shadow: none;
+  }
+  49% {
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #0073e6, 0 0 4vw 0.4vw #0073e6, inset 0 0 1.5vw 0.4vw #0073e6, inset 0 0 0.4vw 0.2vw #0073e6, inset 0 0 0.5vw 0.2vw #fff7f7;
+  }
+  100% {
+    box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #0073e6, 0 0 4vw 0.4vw #0073e6, inset 0 0 1.5vw 0.4vw #0073e6, inset 0 0 0.4vw 0.2vw #0073e6, inset 0 0 0.5vw 0.2vw #fff7f7;
+  }
+}
+section{
+  padding: 100px;
+  margin: 20px;
 }

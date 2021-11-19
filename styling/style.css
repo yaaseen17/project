@@ -15,7 +15,7 @@
   display: inline-block;
   position: relative;
   padding: 10px 15px;
-border-color: transparent;
+  border-color: transparent;
   background-color: transparent;
   color: #ffffff;
   box-shadow: 0px 0px 5px 2px #0073e6;
@@ -29,9 +29,8 @@ border-color: transparent;
 }
 
 .buttonDownload:hover {
-  
   color: #0073e6;
-  box-shadow: 0px 0px 10px 5px #0073e6
+  box-shadow: 0px 0px 10px 5px #0073e6;
 }
 
 .buttonDownload:before,
@@ -118,7 +117,7 @@ border-color: transparent;
 
 #about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+ 
   min-height: 70vh;
   width: 75vw;
   margin: 0 auto;
@@ -188,7 +187,7 @@ border-color: transparent;
     border-radius: none;
   }
   .contents {
-    height: 100vh;
+    height: fit-content;
     border-radius: none;
   }
   .contents h2 {
@@ -562,9 +561,9 @@ hr {
   max-width: 840px;
 }
 
-/* Left contact page */
+
 .form-horizontal {
-  /*float: left;*/
+  
   max-width: 400px;
   font-family: "Lato";
   font-weight: 400;
@@ -603,12 +602,12 @@ textarea {
   transform: translate3d(0px, -29px, 0px);
 }
 
-/* Begin Right Contact Page */
+
 .direct-contact-container {
   max-width: 400px;
 }
 
-/* Location, Phone, Email Section */
+
 .contact-list {
   list-style-type: none;
   margin-left: -30px;
@@ -649,7 +648,6 @@ textarea {
   text-decoration: none;
 }
 
-/* Social Media Icons */
 .social-media-list {
   position: relative;
   font-size: 22px;
@@ -694,7 +692,7 @@ hr {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Begin Media Queries*/
+
 @media screen and (max-width: 850px) {
   .contact-wrapper {
     display: flex;
@@ -948,26 +946,47 @@ h1 {
 }
 .icon {
   display: flex;
- justify-content: center;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   margin: 50px;
 }
-.icon-1{
+.icon-1 {
   margin: 50px;
   border-radius: 50%;
   background-color: #0073e6;
-  
 }
-.icon-2{
+.icon-2 {
   margin: 50px;
   border-radius: 5%;
   background-color: #0073e6;
-  
 }
-.icon-1:hover{
+.icon-1:hover {
   box-shadow: 0px 0px 10px 5px #0073e6;
 }
-.icon-2:hover{
+.icon-2:hover {
   box-shadow: 0px 0px 10px 5px #0073e6;
+}
+@media screen and (max-width: 410px) {
+  .buttonDownload {
+    width: 100px;
+    margin-top: 0%;
+  }/* Begin Media Queries*//* Begin Media Queries*/
+  .container {
+    width: 100px;
+  }
+  .skills {
+    width: 100px;
+  }
+  body {
+    
+    background-size: cover;
+    
+  }
+  .form-horizontal {
+    width: 300px;
+  }
+  .send-button{
+    width: 300px;
+  }
 }
