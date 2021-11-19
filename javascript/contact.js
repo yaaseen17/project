@@ -7,6 +7,11 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
   new WOW().init();
 
 
+
+
+
+
+  
   	/* AUTHOR LINK */
      $('.about-me-img').hover(function(){
             $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
@@ -33,3 +38,6 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
             };
             spanizeLetters.init();
           })(jQuery);
+
+
+          
