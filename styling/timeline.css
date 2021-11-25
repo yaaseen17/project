@@ -628,91 +628,32 @@ section{
   box-shadow: 5px 5px 20px #003b75,-5px -5px 20px #003b75
   }
 }
-@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Gochi+Hand');
+
 
 
 
 .hy{
-  font-size: 2em;
-  font-family: 'Caveat', cursive;
-  margin-left: 370px;
- 
-}
-
-.hy span{
-  display: block;
-  float: left;
-  animation: animate 2.25s linear infinite;
-  margin: auto;
-  padding: 0;
-  position: relative;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
-    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  font-size:2.5rem;
   
+  color:white;
+  font-family: 'Merienda', cursive;
+  animation-name:glow;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+text-align: center;
 }
 
-.hy span:nth-child(1){
-  animation-delay: 0s;
-}
-.hy span:nth-child(2){
-  animation-delay: .25s;
-}
-.hy span:nth-child(2){
-  animation-delay: .5s;
-}
-.hy span:nth-child(3){
-  animation-delay: .75s;
-}
-.hy span:nth-child(4){
-  animation-delay: 1s;
-}
-.hy span:nth-child(5){
-  animation-delay: 1.25s;
-}
-.hy span:nth-child(6){
-  animation-delay: 1.5s;
-}
-.hy span:nth-child(7){
-  animation-delay: 1.75s;
-}
-
-
-
-
-@keyframes animate {
-  0%, 100%{
-    color: rgb(0, 0, 0);
-    filter: blur(2px);
-    text-shadow: 0 0 10px #000000,
-      0 0 20px #000000,
-      0 0 40px #000000,
-      0 0 80px rgb(0, 0, 0),
-      0 0 120px rgb(0, 0, 0),
-      0 0 200px #000000,
-      0 0 300px #000000,
-      0 0 400px #000000;
-  }
-  5%, 95%{
-    color: rgb(255, 255, 255);
-    filter: blur(0px);
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
+  to{text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
     0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  color: #ffffff;
   }
 }
-@media screen and (max-width: 850px){
-  .hy{
-    font-size: 2em;
-    font-family: 'Caveat', cursive;
-    margin-left: 300px;
-   
-  }
-}
-@media screen and (max-width: 655px){
-  .hy{
-    font-size: 2em;
-    font-family: 'Caveat', cursive;
-    margin-left: 100px;
-   
-  }
-}
+
+
+
+
+
+
