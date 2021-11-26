@@ -111,7 +111,7 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
 
-#about {
+/* #about {
   display: grid;
 
   min-height: 70vh;
@@ -119,7 +119,7 @@
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 12px;
-}
+} */
 .image {
   display: flex;
   border-radius: 12px 0 0 12px;
@@ -272,6 +272,7 @@ h6 {
   width: 300px;
   align-items: center;
   margin: auto;
+  margin-top: 10px;
 }
 .fr {
   color: #fff;
@@ -761,15 +762,7 @@ hr {
 h6 {
   margin-top: 10px;
 }
-.wrapper {
-  width: fit-content;
-  min-width: auto;
-margin: auto;
-  transform: translate(-50%, -50%);
-  position: relative;
-  background-color: transparent;
- 
-}
+
 .container {
   width: 100%;
   padding: 30px 30px 50px;
@@ -779,6 +772,8 @@ margin: auto;
   background-color: transparent;
   width: 400px;
 }
+
+
 
 .container * {
   font-family: "Poppins", sans-serif;
@@ -820,6 +815,9 @@ h2 {
 }
 .skills{
   width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #html-bar {
   animation: html-fill 3s forwards;
@@ -928,6 +926,7 @@ h1 {
   flex-wrap: nowrap;
   align-items: center;
   width: fit-content;
+  margin: auto;
   
 }
 .icon {
