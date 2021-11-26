@@ -349,7 +349,7 @@
   text-align: center;
   border-radius: 5%;
   width: fit-content;
-  height: 300px;
+  height: fit-content;
   margin: 20px;
 }
 

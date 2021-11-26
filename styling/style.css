@@ -42,14 +42,12 @@
   top: 52%;
 }
 
-
 .buttonDownload:before {
   width: 10px;
   height: 2px;
   border-style: solid;
   border-width: 0 2px 2px;
 }
-
 
 .buttonDownload:after {
   width: 0;
@@ -75,9 +73,7 @@
   animation-play-state: running;
 }
 
-
 @keyframes downloadArrow {
-  
   0% {
     margin-top: -7px;
     opacity: 1;
@@ -117,7 +113,7 @@
 
 #about {
   display: grid;
- 
+
   min-height: 70vh;
   width: 75vw;
   margin: 0 auto;
@@ -147,6 +143,7 @@
   box-shadow: 0px 0px 20px 10px #0073e6;
   border-left: transparent;
   width: fit-content;
+  margin: auto;
 }
 .contents h2 {
   text-transform: uppercase;
@@ -173,8 +170,6 @@
   background: #c850c0;
   margin: 0 auto;
 }
-
-
 
 @media (max-width: 900px) {
   section {
@@ -223,21 +218,18 @@
   transform-style: preserve-3d;
 }
 
-
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
 
 .flip-card-front,
 .flip-card-back {
   position: absolute;
   width: 100%;
   height: 250px;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 
 .flip-card-front {
   background-color: #0073e6;
@@ -245,7 +237,6 @@
   height: 250px;
 }
 
- 
 .flip-card-back {
   background-color: #0073e6;
   color: white;
@@ -313,9 +304,7 @@ h6 {
   max-width: 840px;
 }
 
-
 .form-horizontal {
- 
   max-width: 400px;
   font-family: "Lato";
   font-weight: 400;
@@ -354,11 +343,9 @@ textarea {
   transform: translate3d(0px, -29px, 0px);
 }
 
-
 .direct-contact-container {
   max-width: 400px;
 }
-
 
 .contact-list {
   list-style-type: none;
@@ -399,7 +386,6 @@ textarea {
   color: #fff;
   text-decoration: none;
 }
-
 
 .social-media-list {
   position: relative;
@@ -466,7 +452,6 @@ textarea {
 hr {
   border-color: rgba(255, 255, 255, 0.6);
 }
-
 
 @media screen and (max-width: 850px) {
   .contact-wrapper {
@@ -561,9 +546,7 @@ hr {
   max-width: 840px;
 }
 
-
 .form-horizontal {
-  
   max-width: 400px;
   font-family: "Lato";
   font-weight: 400;
@@ -602,11 +585,9 @@ textarea {
   transform: translate3d(0px, -29px, 0px);
 }
 
-
 .direct-contact-container {
   max-width: 400px;
 }
-
 
 .contact-list {
   list-style-type: none;
@@ -691,7 +672,6 @@ textarea {
 hr {
   border-color: rgba(255, 255, 255, 0.6);
 }
-
 
 @media screen and (max-width: 850px) {
   .contact-wrapper {
@@ -782,13 +762,13 @@ h6 {
   margin-top: 10px;
 }
 .wrapper {
-  width: 40%;
-  min-width: 590px;
-  position: relative;
+  width: fit-content;
+  min-width: auto;
+margin: auto;
   transform: translate(-50%, -50%);
-  left: 50%;
-  top: 40%;
+  position: relative;
   background-color: transparent;
+ 
 }
 .container {
   width: 100%;
@@ -836,6 +816,10 @@ h2 {
 }
 .skills:not(:last-child) {
   margin-bottom: 30px;
+  
+}
+.skills{
+  width: 200px;
 }
 #html-bar {
   animation: html-fill 3s forwards;
@@ -943,6 +927,8 @@ h1 {
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
+  width: fit-content;
+  
 }
 .icon {
   display: flex;
@@ -971,22 +957,31 @@ h1 {
   .buttonDownload {
     width: 100px;
     margin-top: 0%;
-  }/* Begin Media Queries*//* Begin Media Queries*/
+  } /* Begin Media Queries*/ /* Begin Media Queries*/
   .container {
     width: 100px;
   }
   .skills {
-    width: 100px;
+    width: 200px;
   }
   body {
-    
-    background-size: cover;
-    
+    background-size: 410px;
+    overflow-x: hidden;
+
+    background-repeat: repeat-y;
   }
   .form-horizontal {
     width: 300px;
   }
-  .send-button{
+  .send-button {
     width: 300px;
+  }
+}
+@media screen and (max-width: 410px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
   }
 }
